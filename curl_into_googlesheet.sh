@@ -1,0 +1,2 @@
+curl --request POST   'https://sheets.googleapis.com/v4/spreadsheets/1qJLwYnme7UjnE1BMOMOC2auHyy376IKxO4maxjmqe1Y/values/recruiter%20form%20submits:append?valueInputOption=RAW&key=[YOUR_API_KEY]'   --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]'   --header 'Accept: application/json'   --header 'Content-Type: application/json'   --data '{values:[[Vorname,Nachname,Telefonnummer,Firma,Email,Grund für den Download],[API Vorname,API Nachname,API Telefonnummer,API Firma,sho1975@gmail.com,API Grund für den Download]]}'   --compressed
+
