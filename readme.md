@@ -6,4 +6,4 @@
 * The sheet: https://docs.google.com/spreadsheets/d/1qJLwYnme7UjnE1BMOMOC2auHyy376IKxO4maxjmqe1Y/edit#gid=0 (user: hohlfeld.sven.projects@gmail.com)
 * github.com
 * google docs oauth docu: https://developers.google.com/workspace/guides/create-credentials#api-key
-
+* api/key/credential management tool: https://console.cloud.google.com/apis/credentials?project=consulting-hp-automation&supportedpurview=project
