@@ -1,4 +1,5 @@
-<html data-theme="winter">
+<!DOCTYPE html>
+<html data-theme="winter" lang="en">
 
 <head>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.2/dist/full.css" rel="stylesheet" type="text/css" />
@@ -7,17 +8,17 @@
 
 <body>
   <div class="hero min-h-screen bg-base-200">
-    <div
-      class="hero-content flex-col lg:flex-row-reverse rounded-lg shadow-2xl shadow-secondary-600 bg-neutral-content">
+    <div class="hero-content flex-col lg:flex-row-reverse rounded-2xl shadow-2xl shadow-cyan-400/40">
       <img
         src="https://2.gravatar.com/avatar/f94887e05d551f342e359df64e87a07056990937fb65a259a882d1a33a58cd45?size=1024"
-        class="max-w-sm rounded-lg shadow-2xl" />
+        class="max-w-sm rounded-2xl shadow-2xl" />
       <div>
         <h1 class="text-5xl font-bold">Sven Hohlfeld</h1>
         <h2>IT Consultant</h2>
         <p class="py-6">Software Engineering in Go, Kotlin, Dart, Typescript & Java:</br>On premise &amp; cloud</p>
-        <button class="btn btn-accent" onclick="my_modal_5.showModal()">Download complete profile pack</button>
-        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <button class="btn btn-primary shadow-2xl drop-shadow-xl shadow-cyan-300/30"
+          onclick="profile-form.showModal()">Download complete profile pack</button>
+        <dialog id="profile-form" class="modal modal-bottom sm:modal-middle">
           <div class="modal-box">
             <div class="modal-action">
               <form method="dialog">
@@ -45,26 +46,26 @@
     <nav>
       <div class="tooltip tooltip-top" data-tip="Lets connect with one of those">
         <div class="grid grid-flow-col gap-4">
-          <a href="www.linkedin.com/in/sven42" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="40"
-              height="40" viewBox="0 0 40 40">
+          <a href="www.linkedin.com/in/sven42" target="_blank"><svg class="fill-cyan-400"
+              xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
               <path
                 d="M12.1,13.8v19.1H5.7V13.8C5.7,13.8,12.1,13.8,12.1,13.8z M12.5,7.9c0,0.9-0.3,1.7-1,2.4c-0.7,0.6-1.5,0.9-2.6,0.9h0 c-1.1,0-1.9-0.3-2.5-0.9c-0.6-0.6-1-1.4-1-2.4c0-1,0.3-1.7,1-2.4S7.9,4.6,9,4.6s1.9,0.3,2.6,0.9S12.5,6.9,12.5,7.9z M35,22v11h-6.4 V22.7c0-1.4-0.3-2.4-0.8-3.2c-0.5-0.8-1.3-1.1-2.4-1.1c-0.8,0-1.5,0.2-2,0.7c-0.5,0.4-1,1-1.2,1.7c-0.1,0.4-0.2,0.9-0.2,1.6v10.7 h-6.4c0-5.1,0-9.3,0-12.5s0-5.1,0-5.7l0-0.9H22v2.8h0c0.3-0.4,0.5-0.8,0.8-1.1c0.3-0.3,0.6-0.6,1.1-1c0.5-0.4,1-0.6,1.7-0.8 c0.7-0.2,1.4-0.3,2.2-0.3c2.2,0,4,0.7,5.3,2.2C34.4,17,35,19.1,35,22L35,22z">
               </path>
             </svg></a>
-          <a href="https://www.xing.com/profile/Sven_Hohlfeld" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
-              width="40" height="40" viewBox="0 0 40 40">
+          <a href="https://www.xing.com/profile/Sven_Hohlfeld" target="_blank"><svg class="fill-cyan-400"
+              xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
               <path
                 d="M16.8,16.7c-0.1,0.3-1.9,3.4-5.4,9.5c-0.4,0.6-0.8,1-1.4,1H5c-0.3,0-0.5-0.1-0.6-0.4c-0.1-0.2-0.1-0.5,0-0.8l5.3-9.4 c0,0,0,0,0,0l-3.4-5.8c-0.2-0.3-0.2-0.6,0-0.8C6.4,9.9,6.6,9.8,7,9.8h5c0.6,0,1,0.3,1.4,0.9L16.8,16.7z M33.6,3.3 c0.2,0.2,0.2,0.5,0,0.8l-11,19.5v0l7,12.8c0.2,0.3,0.2,0.5,0,0.8c-0.1,0.2-0.4,0.3-0.7,0.3h-5c-0.6,0-1-0.3-1.4-0.9l-7.1-13 c0.3-0.4,3.9-7,11.1-19.7C26.9,3.3,27.4,3,27.9,3h5C33.3,3,33.5,3.1,33.6,3.3L33.6,3.3z">
               </path>
             </svg></a>
-          <a href="https://github.com/wunderkind2k1" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="40"
-              height="40" viewBox="0 0 40 40">
+          <a href="https://github.com/wunderkind2k1" target="_blank"><svg class="fill-cyan-400"
+              xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
               <path
                 d="M36,20.3c0,3.5-1,6.6-3.1,9.4c-2,2.8-4.7,4.7-7.9,5.8c-0.4,0.1-0.6,0-0.8-0.1c-0.2-0.2-0.3-0.4-0.3-0.6v-4.4 c0-1.3-0.4-2.3-1.1-3c0.8-0.1,1.5-0.2,2.1-0.4c0.6-0.2,1.3-0.4,2-0.8c0.7-0.4,1.2-0.8,1.7-1.4c0.5-0.5,0.8-1.3,1.1-2.2 s0.4-2,0.4-3.1c0-1.7-0.5-3.1-1.6-4.3c0.5-1.3,0.5-2.7-0.2-4.2c-0.4-0.1-1,0-1.7,0.2c-0.7,0.3-1.4,0.6-1.9,0.9L24,12.5 c-1.3-0.4-2.6-0.5-4-0.5s-2.7,0.2-4,0.5c-0.2-0.2-0.5-0.3-0.9-0.6c-0.4-0.2-0.9-0.5-1.7-0.8c-0.8-0.3-1.4-0.4-1.8-0.3 c-0.6,1.6-0.7,3-0.1,4.2c-1.1,1.2-1.6,2.6-1.6,4.3c0,1.2,0.1,2.2,0.4,3.1s0.6,1.6,1.1,2.2s1,1,1.7,1.4c0.7,0.4,1.3,0.6,2,0.8 c0.6,0.2,1.3,0.3,2.1,0.4c-0.6,0.5-0.9,1.2-1,2.1c-0.3,0.1-0.6,0.2-0.9,0.3c-0.3,0.1-0.7,0.1-1.2,0.1c-0.5,0-0.9-0.1-1.4-0.4 c-0.5-0.3-0.8-0.7-1.2-1.3c-0.3-0.4-0.6-0.8-1-1.1c-0.4-0.3-0.8-0.4-1-0.5L9,26.5c-0.3,0-0.5,0-0.6,0.1c-0.1,0.1-0.1,0.1-0.1,0.2 c0,0.1,0.1,0.2,0.2,0.3c0.1,0.1,0.2,0.2,0.3,0.2l0.1,0.1c0.3,0.1,0.6,0.4,0.9,0.8s0.5,0.7,0.7,1.1l0.2,0.5c0.2,0.5,0.5,1,0.9,1.3 c0.4,0.3,0.9,0.5,1.4,0.6c0.5,0.1,1,0.1,1.4,0.1c0.5,0,0.9,0,1.2-0.1l0.5-0.1c0,0.5,0,1.1,0,1.9c0,0.7,0,1.1,0,1.1 c0,0.2-0.1,0.5-0.3,0.6c-0.2,0.2-0.5,0.2-0.8,0.1c-3.2-1.1-5.8-3-7.9-5.8S4,23.8,4,20.3c0-2.9,0.7-5.6,2.1-8S9.5,7.8,12,6.4 s5.1-2.1,8-2.1s5.6,0.7,8,2.1s4.4,3.4,5.8,5.8S36,17.4,36,20.3L36,20.3z">
               </path>
             </svg></a>
-          <a href="https://twitter.com/sho1975" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="40"
-              height="40" viewBox="0 0 40 40">
+          <a href="https://twitter.com/sho1975" target="_blank"><svg class="fill-cyan-400"
+              xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
               <path
                 d="M36.3,10.2c-1,1.3-2.1,2.5-3.4,3.5c0,0.2,0,0.4,0,1c0,1.7-0.2,3.6-0.9,5.3c-0.6,1.7-1.2,3.5-2.4,5.1 c-1.1,1.5-2.3,3.1-3.7,4.3c-1.4,1.2-3.3,2.3-5.3,3c-2.1,0.8-4.2,1.2-6.6,1.2c-3.6,0-7-1-10.2-3c0.4,0,1.1,0.1,1.5,0.1 c3.1,0,5.9-1,8.2-2.9c-1.4,0-2.7-0.4-3.8-1.3c-1.2-1-1.9-2-2.2-3.3c0.4,0.1,1,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-1.4-0.3-2.7-1.1-3.7-2.3s-1.4-2.6-1.4-4.2v-0.1c1,0.6,2,0.9,3,0.9c-1-0.6-1.5-1.3-2.2-2.4c-0.6-1-0.9-2.1-0.9-3.3s0.3-2.3,1-3.4 c1.5,2.1,3.6,3.6,6,4.9s4.9,2,7.6,2.1c-0.1-0.6-0.1-1.1-0.1-1.4c0-1.8,0.8-3.5,2-4.7c1.2-1.2,2.9-2,4.7-2c2,0,3.6,0.8,4.8,2.1 c1.4-0.3,2.9-0.9,4.2-1.5c-0.4,1.5-1.4,2.7-2.9,3.6C33.8,11.2,35.1,10.9,36.3,10.2L36.3,10.2z">
               </path>
@@ -73,9 +74,98 @@
       </div>
     </nav>
     <aside>
-      <p>Copyright © 2023 - All right reserved by Sven Hohlfeld IT Consulting</p>
+      <p>Copyright © 2023 - All right reserved by Sven Hohlfeld IT Consulting | <span class="link link-neutral inline"
+          onclick="impressum_modal.showModal()">Impressum (german)</span>| <span class="link link-neutral inline"
+          onclick="datenschutz_modal.showModal()">Datenschutz (german)</span></p>
+      <dialog id="impressum_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <h3 class="font-bold text-lg">Impressum</h3>
+          <p class="py-4 text-left">Informations gemäß § 5 TMG<br />
+            Sven Hohfleld IT Consulting<br />
+            Hartwigstraße. 6<br />
+            30169 Hannover<br />
+            Vertreten durch:<br />
+            Sven Hohlfeld<br />
+            Kontakt:<br />
+            Telefon: in Vorbereitung<br />
+            E-Mail: <a
+              href="mailto:projects@sven-hohlfeld.de?subject=Homepage project request">projects@sven-hohlfeld.de</a></p>
+          <p class="py-4 text-left">
+            <span class="font-bold">Haftungsausschluss:</span><br />
+            Haftung für Links<br />
+            Unser Angebot enthält Links zu externen Webseiten Dritter,
+            auf deren Inhalte wir keinen Einfluss haben.
+            Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
+            Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten
+            verantwortlich.
+            Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft.
+            Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
+            Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist
+            jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar.
+            Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+          </p>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
     </aside>
   </footer>
+  </dialog>
+  <dialog id="datenschutz_modal" class="modal modal-bottom sm:modal-middle">
+    <div class="modal-box">
+      <h3 class="font-bold text-lg">Datenschutzerklärung</h3>
+      <p class="py-4 text-left">
+        Bereitstellung des Onlineangebotes und Webhosting
+        Wir verarbeiten die Daten der Nutzer, um ihnen unsere Online-Dienste zur Verfügung stellen zu können. Zu diesem
+        Zweck verarbeiten wir die IP-Adresse des Nutzers, die notwendig ist, um die Inhalte und Funktionen unserer
+        Online-Dienste an den Browser oder das Endgerät der Nutzer zu übermitteln.
+      </p>
+      <p class="py-4 text-left">
+        Verarbeitete Datenarten: Nutzungsdaten (z. B. besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten); Meta-,
+        Kommunikations- und Verfahrensdaten (z. B. IP-Adressen, Zeitangaben, Identifikationsnummern,
+        Einwilligungsstatus).<br />
+        Betroffene Personen: Nutzer (z. B. Webseitenbesucher, Nutzer von Onlinediensten).
+        Zwecke der Verarbeitung: Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit; Informationstechnische
+        Infrastruktur (Betrieb und Bereitstellung von Informationssystemen und technischen Geräten (Computer, Server
+        etc.).); Sicherheitsmaßnahmen.<br />
+        Rechtsgrundlagen: Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO).
+        Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:
+      </p>
+      <p class="py-4 text-left">
+        Bereitstellung Onlineangebot auf gemietetem Speicherplatz: Für die Bereitstellung unseres Onlineangebotes nutzen
+        wir Speicherplatz, Rechenkapazität und Software, die wir von einem entsprechenden Serveranbieter (auch
+        "Webhoster" genannt) mieten oder anderweitig beziehen; Rechtsgrundlagen: Berechtigte Interessen (Art. 6 Abs. 1
+        S. 1 lit. f) DSGVO);<br />
+        Erhebung von Zugriffsdaten und Logfiles: Der Zugriff auf unser Onlineangebot wird in Form von so genannten
+        "Server-Logfiles" protokolliert. Zu den Serverlogfiles können die Adresse und Name der abgerufenen Webseiten und
+        Dateien, Datum und Uhrzeit des Abrufs, übertragene Datenmengen, Meldung über erfolgreichen Abruf, Browsertyp
+        nebst Version, das Betriebssystem des Nutzers, Referrer URL (die zuvor besuchte Seite) und im Regelfall
+        IP-Adressen und der anfragende Provider gehören. Die Serverlogfiles können zum einen zu Zwecken der Sicherheit
+        eingesetzt werden, z. B., um eine Überlastung der Server zu vermeiden (insbesondere im Fall von missbräuchlichen
+        Angriffen, sogenannten DDoS-Attacken) und zum anderen, um die Auslastung der Server und ihre Stabilität
+        sicherzustellen; Rechtsgrundlagen: Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO); Löschung von
+        Daten: Logfile-Informationen werden für die Dauer von maximal 30 Tagen gespeichert und danach gelöscht oder
+        anonymisiert. Daten, deren weitere Aufbewahrung zu Beweiszwecken erforderlich ist, sind bis zur endgültigen
+        Klärung des jeweiligen Vorfalls von der Löschung ausgenommen.<br />
+        Content-Delivery-Network: Wir setzen ein "Content-Delivery-Network" (CDN) ein. Ein CDN ist ein Dienst, mit
+        dessen Hilfe Inhalte eines Onlineangebotes, insbesondere große Mediendateien, wie Grafiken oder
+        Programm-Skripte, mit Hilfe regional verteilter und über das Internet verbundener Server schneller und sicherer
+        ausgeliefert werden können; Rechtsgrundlagen: Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO);
+      </p>
+      </p>
+      <div class="modal-action">
+        <form method="dialog">
+          <!-- if there is a button in form, it will close the modal -->
+          <button class="btn">Close</button>
+        </form>
+      </div>
+    </div>
+    </aside>
+    </footer>
+  </dialog>
 </body>
 
 </html>
