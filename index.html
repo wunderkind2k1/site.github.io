@@ -4,6 +4,11 @@
 <head>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.2/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    const sendIt = () => {
+      alert("Sent it!");
+    };
+  </script>
 </head>
 
 <body>
@@ -17,23 +22,18 @@
         <h2>IT Consultant</h2>
         <p class="py-6 text-2xl">Software Engineering in Go, Kotlin, Dart, Typescript & Java:</br>On premise &amp; cloud</p>
         <button class="btn btn-primary shadow-2xl drop-shadow-xl shadow-cyan-300/30"
-          onclick="profile-form.showModal()">Download complete profile pack</button>
-        <dialog id="profile-form" class="modal modal-bottom sm:modal-middle">
+          onclick="profile_form.showModal()">Download complete profile pack</button>
+        <dialog id="profile_form" class="modal modal-bottom sm:modal-middle">
           <div class="modal-box">
+            <div class="form-control w-full max-w-xs  space-y-4">
+              <h3>Let me now how to send you the download link</h3>
+              <input type="text" placeholder="How shall I call you?" class="input input-bordered w-full max-w-xs" />
+              <input type="text" placeholder="Send download link to this Email" class="input input-bordered w-full max-w-xs" />
+              <button class="btn btn-primary shadow-2xl drop-shadow-xl shadow-cyan-300/30" onclick="sendIt();">Sent request</button>
+            </div>
             <div class="modal-action">
               <form method="dialog">
                 <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-                <div class="form-control w-full max-w-xs">
-                  <label class="label">
-                    <span class="label-text">What is your name?</span>
-                    <span class="label-text-alt">Top Right label</span>
-                  </label>
-                  <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
-                  <label class="label">
-                    <span class="label-text-alt">Bottom Left label</span>
-                    <span class="label-text-alt">Bottom Right label</span>
-                  </label>
-                </div>
               </form>
             </div>
           </div>
