@@ -7,12 +7,7 @@
   <script>
     const sendIt = () => {
       alert("Sent it!");
-      poorMansValidation();
     };
-    const simpleSubmit = (event) => {
-      alert("submitted");
-      event.preventDefault();
-    }
   </script>
 </head>
 
@@ -20,31 +15,22 @@
   <div class="hero min-h-screen bg-base-200">
     <div class="hero-content flex-col lg:flex-row-reverse rounded-2xl shadow-2xl shadow-cyan-400/40">
       <img
-        src="https://2.gravatar.com/avatar/f94887e05d551f342e359df64e87a07056990937fb65a259a882d1a33a58cd45?size=800"
+        src="https://2.gravatar.com/avatar/f94887e05d551f342e359df64e87a07056990937fb65a259a882d1a33a58cd45?size=1024"
         class="max-w-sm rounded-2xl shadow-2xl" />
       <div>
         <h1 class="text-5xl font-bold">Sven Hohlfeld</h1>
         <h2>IT Consultant</h2>
-        <p class="py-6 text-2xl">Software Engineering in Go, Kotlin, Dart, Typescript & Java:</br>On premise &amp; cloud
-        </p>
+        <p class="py-6 text-2xl">Software Engineering in Go, Kotlin, Dart, Typescript & Java:</br>On premise &amp; cloud</p>
         <button class="btn btn-primary shadow-2xl drop-shadow-xl shadow-cyan-300/30"
           onclick="profile_form.showModal()">Download complete profile pack</button>
         <dialog id="profile_form" class="modal modal-bottom sm:modal-middle">
           <div class="modal-box">
-            <form id="submitForm">
             <div class="form-control w-full max-w-xs  space-y-4">
               <h3>Let me now how to send you the download link</h3>
-              <input id="name" type="text" placeholder="How shall I call you (optional)?"
-                class="input input-bordered w-full max-w-xs" />
-              <input id="mail" type="email" required placeholder="Send download link to this Email"
-                class="input input-bordered w-full max-w-xs" />
-              <input id="company" type="text" placeholder="Your Company mame (optional)?"
-                class="input input-bordered w-full max-w-xs" />
-              <input id="phone" type="tel" placeholder="Your phone number (optional)?"
-                class="input input-bordered w-full max-w-xs" />
-              <input type="submit" class="btn btn-primary shadow-2xl drop-shadow-xl shadow-cyan-300/30" value="Send request" onsubmit="event.preventDefault();alert('foo');"></imput>
+              <input type="text" placeholder="How shall I call you?" class="input input-bordered w-full max-w-xs" />
+              <input type="text" placeholder="Send download link to this Email" class="input input-bordered w-full max-w-xs" />
+              <button class="btn btn-primary shadow-2xl drop-shadow-xl shadow-cyan-300/30" onclick="sendIt();">Sent request</button>
             </div>
-          </form>
             <div class="modal-action">
               <form method="dialog">
                 <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
@@ -180,10 +166,6 @@
     </aside>
     </footer>
   </dialog>
-  <script>
-    const submitForm = document.getElementById("submitForm");
-    submitForm.addEventListener("submit", simpleSubmit);
-  </script>
 </body>
 
 </html>
