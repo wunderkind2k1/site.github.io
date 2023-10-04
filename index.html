@@ -3,55 +3,21 @@
 
 <head>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.2/dist/full.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    const sendIt = () => {
-      alert("Sent it!");
-      poorMansValidation();
-    };
-    const simpleSubmit = (event) => {
-      alert("submitted");
-      event.preventDefault();
-    }
-  </script>
+  <script src="tailwind-v3.3.3-min.js"></script>
 </head>
 
 <body>
   <div class="hero min-h-screen bg-base-200">
     <div class="hero-content flex-col lg:flex-row-reverse rounded-2xl shadow-2xl shadow-cyan-400/40">
-      <img
-        src="https://2.gravatar.com/avatar/f94887e05d551f342e359df64e87a07056990937fb65a259a882d1a33a58cd45?size=800"
+      <img src="https://2.gravatar.com/avatar/f94887e05d551f342e359df64e87a07056990937fb65a259a882d1a33a58cd45?size=800"
         class="max-w-sm rounded-2xl shadow-2xl" />
       <div>
         <h1 class="text-5xl font-bold">Sven Hohlfeld</h1>
         <h2>IT Consultant</h2>
         <p class="py-6 text-2xl">Software Engineering in Go, Kotlin, Dart, Typescript & Java:</br>On premise &amp; cloud
         </p>
-        <button class="btn btn-primary shadow-2xl drop-shadow-xl shadow-cyan-300/30"
-          onclick="profile_form.showModal()">Download complete profile pack</button>
-        <dialog id="profile_form" class="modal modal-bottom sm:modal-middle">
-          <div class="modal-box">
-            <form id="submitForm">
-            <div class="form-control w-full max-w-xs  space-y-4">
-              <h3>Let me now how to send you the download link</h3>
-              <input id="name" type="text" placeholder="How shall I call you (optional)?"
-                class="input input-bordered w-full max-w-xs" />
-              <input id="mail" type="email" required placeholder="Send download link to this Email"
-                class="input input-bordered w-full max-w-xs" />
-              <input id="company" type="text" placeholder="Your Company mame (optional)?"
-                class="input input-bordered w-full max-w-xs" />
-              <input id="phone" type="tel" placeholder="Your phone number (optional)?"
-                class="input input-bordered w-full max-w-xs" />
-              <button class="btn btn-primary shadow-2xl drop-shadow-xl shadow-cyan-300/30" onsubmit="event.preventDefault();alert('foo');">Send request</button>
-            </div>
-          </form>
-            <div class="modal-action">
-              <form method="dialog">
-                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-              </form>
-            </div>
-          </div>
-        </dialog>
+        <a role="button" class="btn btn-primary shadow-2xl drop-shadow-xl shadow-cyan-300/30"
+          href="https://forms.gle/mDBw2cwg8QH3QP7j9" id="requestProfile" target="_blank">Request profile</a>
       </div>
     </div>
   </div>
@@ -88,9 +54,9 @@
       </div>
     </nav>
     <aside>
-      <p>Copyright © 2023 - All right reserved by Sven Hohlfeld IT Consulting | <span class="link link-neutral inline"
-          onclick="impressum_modal.showModal()">Impressum (german)</span>| <span class="link link-neutral inline"
-          onclick="datenschutz_modal.showModal()">Datenschutz (german)</span></p>
+      <p>Copyright &copy; 2023 - All right reserved by Sven Hohlfeld IT Consulting | <span
+          class="link link-neutral inline" onclick="impressum_modal.showModal()">Impressum (german)</span>| <span
+          class="link link-neutral inline" onclick="datenschutz_modal.showModal()">Datenschutz (german)</span></p>
       <dialog id="impressum_modal" class="modal modal-bottom sm:modal-middle">
         <div class="modal-box">
           <h3 class="font-bold text-lg">Impressum</h3>
@@ -181,8 +147,23 @@
     </footer>
   </dialog>
   <script>
-    const submitForm = document.getElementById("submitForm");
-    submitForm.addEventListener("submit", simpleSubmit);
+    let windowObjectReference = null; // global variable
+    function openRequestedTab(url, windowName) {
+      if (windowObjectReference === null || windowObjectReference.closed) {
+        windowObjectReference = window.open(url, windowName);
+      } else {
+        windowObjectReference.focus();
+      }
+    }
+    formlinkEl = document.getElementById('requestProfile');
+    formlinkEl.addEventListener(
+      "click",
+      (event) => {
+        openRequestedTab(formlinkEl.href);
+        event.preventDefault();
+      },
+      false,
+    );
   </script>
 </body>
 
